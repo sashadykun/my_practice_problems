@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        
+        function getLongerWords(string, array){
+            newArray=[];
+            for(var arrayIndex=0; arrayIndex < array.length; arrayIndex++){
+                if (string.length < array[arrayIndex].length){
+                    newArray.push(array[arrayIndex]);
+                }
+            }
+            return newArray;
+        }
+        
+        var myArray = ['bug', 'insect', 'mammal', 'reptile', 'mammoth', 'turtles']
+        getLongerWords('whales', myArray)
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
