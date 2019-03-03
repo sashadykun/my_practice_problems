@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script>
+var myArray = ['hello', 34, true, false, 'goodbye', 56, 12, '25', true, undefined, null, ]
+var stringA =[];
+var numberA = [];
+var boolianA = [];
+var objectA = [];
+var undefinedA = [];
+var multiA = [];
+function multidementionalArray(par) {
+    for (let index=0; index<par.length; index++){
+        if(typeof par[index] === 'string'){
+            stringA.push(par[index])
+        }
+        else if(typeof par[index] === 'number'){
+            numberA.push(par[index])
+        }
+        else if (typeof par[index] === "boolean"){
+            boolianA.push(par[index])
+        }
+        else if(typeof par[index] === 'object'){
+            objectA.push(par[index])
+        }
+        else if (typeof par[index] === 'undefined'){
+            undefinedA.push(par[index])
+        }
+    }
+
+    return console.log([stringA, numberA, boolianA, objectA, undefinedA])
+
+}
+multidementionalArray(myArray);
+
+
+
+
+
+</script>
+<body>
+    
+</body>
+</html>
